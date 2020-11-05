@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Va a adaptar el tamaño dependiendo del dispositivo -->
+    <meta name="viewport" content="width-device-width, initial-scale-1">
+    <!-- Enlace con el archivo CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Librería Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Logotipo de la página -->
+    <link rel="shorcut icon" type="image/x-icon" href="./assets/img/e4-logo.ico">
+    <title>E4 - Electronic Entertainment Expo</title>
+</head>
+
+<body class="pagina" data-spy="scroll" data-target="#header" data-offset="96">
+    <!-- Contenido De La Página -->
+    <!-- HEADER -->
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/img/e4-logo.png" alt="E4">
+                E4 - Electronic Entertainment Expo
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#main">Evento</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#ponentes">Ponentes Estelares</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#lugar-fecha">Lugar y Fechas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#inscribe">Inscripciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="#modal_compra" data-toggle="modal"><strong>Comprar
+                                Entradas</strong></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <!-- FIN DEL HEADER -->
+
+    <!-- SECCIÓN PRINCIPAL DE LA PÁGINA -->
+    <main id="main">
+        <!-- SECCIÓN: EL EVENTO -->
+        <div id="carrusel" class="carousel slide" data-ride="carousel" data-pause="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/img/Fondo1.jpg" class="d-block w-100" alt="Evento1">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./assets/img/Fondo2.jpg" class="d-block w-100" alt="Evento2">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./assets/img/Fondo3.jpg" class="d-block w-100" alt="Evento3">
+                </div>
+
+                <div class="overlay">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <!--Con TEXT-CENTER y TEXT-RIGHT se coloca a lado derecho y centra el texto-->
+                            <div class="col-md-6 offset-md-6 text-center text-right mt-4 bg-primary pb-3 pt-3">
+                                <h2>Electronic Entertainment Expo</h2>
+                                <br>
+                                <p class="d-none d-md-block" style="color: white">Cancún será sede del evento de
+                                    videojuegos más grande del mundo. E4 concentra a la élite de jugadores y aficionados
+                                    más exclusiva. Porque 4 es más que 3, no dejes de asistir a este magno evento,
+                                    después de él ya nada será igual.
+                                </p>
+                                <a href="#inscribe" class="btn btn-light mt-2" role="button">Inscripciones</a>
+                                <a href="#modal_compra" class="btn btn-success mt-2" data-toggle="modal"
+                                    type="button"><strong>Comprar entradas</strong></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- FIN DE LA SECCIÓN: EL EVENTO -->
+
+        <!-- SECCIÓN DE PONENTES -->
+        <section id="ponentes" class="mt-4 pt-4">
+            <div class="container" align-items-center>
+                <div class="row">
+                    <div class="col text-center text-uppercase">
+                        <h4 class="display-4" style="font-weight: bold; font-family: serif; background-color: white">
+                            Ponentes Estelares</h4>
+                    </div>
+                </div>
+                <div class="row pb-4 pt-4" id="cards">
+                    <div class="col">
+                        <div class="card align-items-center text-justify pb-3 pt-3 bg-dark text-white"
+                            style="width: 18rem;">
+                            <img src="./assets/img/Shigeru Miyamoto.jpg" class="card-img-top" alt="Shigeru Miyamoto">
+                            <div class="card-body">
+                                <h5 class="card-title">Shigeru Miyamoto</h5>
+                                <div class="bagdes pb-3">
+                                    <span class="badge badge-warning">25 de Noviembre</span>
+                                    <span class="badge badge-danger">4:00 PM</span>
+                                </div>
+                                <p class="card-text">Shigeru Miyamoto es un diseñador y productor de videojuegos japonés
+                                    que trabaja para Nintendo desde 1977. Es considerado como el padre de los
+                                    videojuegos modernos o el Walt Disney de los juegos electrónicos​ por haber creado
+                                    algunas de las franquicias más influyentes de la industria, entre las que se
+                                    encuentran Mario, Donkey Kong, The Legend of Zelda, Star Fox, Pikmin y F-Zero.</p>
+                                <a href="https://es.wikipedia.org/wiki/Shigeru_Miyamoto" class="btn btn-light"><b>Ver
+                                        Perfil</b></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card align-items-center text-justify pb-3 pt-3 bg-dark text-white"
+                            style="width: 18rem;">
+                            <img src="./assets/img/Koji%20Kondo.jpg" class="card-img-top" alt="Koji Kondo">
+                            <div class="card-body">
+                                <h5 class="card-title">Koji Kondō</h5>
+
+                                <div class="bagdes pb-3">
+                                    <span class="badge badge-warning">26 de Noviembre</span>
+                                    <span class="badge badge-danger">4:00 PM</span>
+                                </div>
+
+                                <p class="card-text">Kōji Kondō es un músico y compositor japonés. Sus bandas sonoras
+                                    son de varios videojuegos producidos por Nintendo, sus composiciones resultan
+                                    generalmente memorables. Un estudio comprobó que dos tercios de la población mundial
+                                    reconoce el tema principal del juego Super Mario Bros. Su música se considera una
+                                    parte del estilo de Nintendo.</p>
+                                <a href="https://es.wikipedia.org/wiki/K%C5%8Dji_Kond%C5%8D"
+                                    class="btn btn-light"><b>Ver Perfil</b></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card align-items-center text-justify pb-3 pt-3 bg-dark text-white"
+                            style="width: 18rem;">
+                            <img src="./assets/img/Phil%20Spencer.jpg" class="card-img-top" alt="Phil Spencer">
+                            <div class="card-body">
+                                <h5 class="card-title">Phil Spencer</h5>
+
+                                <div class="bagdes pb-3">
+                                    <span class="badge badge-warning">27 de Noviembre</span>
+                                    <span class="badge badge-danger">4:00 PM</span>
+                                </div>
+
+                                <p class="card-text">Phil Spencer es un ejecutivo empresarial estadounidense
+                                    Vicepresidente Ejecutivo de Gaming en Microsoft. Es actualmente el jefe de la marca
+                                    Xbox y dirige los equipos creativos de ingeniería en Microsoft. Satya Nadella
+                                    anunció en un email corporativo que Spencer seria designado a dirigir los equipos de
+                                    Xbox, Xbox Live, Xbox Music, y Xbox Video, y Microsoft Studios.</p>
+                                <a href="https://es.wikipedia.org/wiki/Phil_Spencer" class="btn btn-light"><b>Ver
+                                        Perfil</b></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col pt-4">
+                        <div class="card align-items-center text-justify pb-3 pt-3 bg-dark text-white"
+                            style="width: 18rem;">
+                            <img src="./assets/img/Mark_Cerny.jpg" class="card-img-top" alt="Mark Cerny">
+                            <div class="card-body">
+                                <h5 class="card-title">Mark Cerny</h5>
+
+                                <div class="bagdes pb-3">
+                                    <span class="badge badge-warning">28 de Noviembre</span>
+                                    <span class="badge badge-danger">4:00 PM</span>
+                                </div>
+
+                                <p class="card-text">Mark Cerny es un diseñador e importante figura en la industria de
+                                    los videojuegos, en América trabaja como diseñador de juegos, y se desempeña como
+                                    programador, productor y ejecutivo de negocios. Actualmente es presidente de Cerny
+                                    Games, compañía la cual fundó en 1998 ahora actúa como consultor en la industria de
+                                    los videojuegos. En 2019 se confirmó que es el arquitecto de la PlayStation 5.</p>
+                                <a href="https://es.wikipedia.org/wiki/Mark_Cerny" class="btn btn-light"><b>Ver
+                                        Perfil</b></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col pt-4">
+                        <div class="card align-items-center text-justify pb-3 pt-3 bg-dark text-white"
+                            style="width: 18rem;">
+                            <img src="./assets/img/toru-iwatani.jpg" class="card-img-top" alt="Toru Iwatani">
+                            <div class="card-body">
+                                <h5 class="card-title">Toru Iwatani</h5>
+
+                                <div class="bagdes pb-3">
+                                    <span class="badge badge-warning">29 de Noviembre</span>
+                                    <span class="badge badge-danger">4:00 PM</span>
+                                </div>
+
+                                <p class="card-text">Tōru Iwatani es un diseñador de videojuegos japonés en la década de
+                                    1980, y creó uno de los más populares juegos arcade de todos los tiempos, Pac-Man.
+                                    Iwatani abandonó Namco en 2007 para dedicarse de tiempo completo a la docencia en la
+                                    Universidad Politécnica de Tokio.El profesor Iwatani fue incluido como personaje y
+                                    creador de Pac-Man en la película Pixels del 2015. Fue interpretado por el actor
+                                    Denis Akiyama.</p>
+                                <a href="https://es.wikipedia.org/wiki/T%C5%8Dru_Iwatani" class="btn btn-light"><b>Ver
+                                        Perfil</b></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col pt-4">
+                        <div class="card align-items-center text-justify pb-3 pt-3 bg-dark text-white"
+                            style="width: 18rem;">
+                            <img src="./assets/img/Mkleo.jpg" class="card-img-top" alt="Leonardo Pérez">
+                            <div class="card-body">
+                                <h5 class="card-title">Leonardo "MKLeo" Pérez</h5>
+
+                                <div class="bagdes pb-3">
+                                    <span class="badge badge-warning">30 de Noviembre</span>
+                                    <span class="badge badge-danger">4:00 PM</span>
+                                </div>
+
+                                <p class="card-text">Leonardo López Pérez es un mexicano profesional Super Smash Bros.
+                                    Es ampliamente considerado el mejor jugador de Super Smash Bros.Ultimate del mundo y
+                                    es el número uno en el Ranking Global de Panda para la primera y segunda mitad de
+                                    2019. En 2019 López Pérez ganó el torneo Super Smash Bros.Ultimate en Evo 2019, el
+                                    torneo fuera de línea más grande por número de participantes en la historia de la
+                                    franquicia Smash.</p>
+                                <a href="https://en.wikipedia.org/wiki/MkLeo" class="btn btn-light"><b>Ver
+                                        Perfil</b></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- FIN DE LA SECCIÓN DE PONENTES -->
+
+        <!-- Lugar y Fecha -->
+        <section id="lugar-fecha">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-6 pl-1 pr-0 pb-1 pt-1">
+                        <img src="./assets/img/Cancun.jpg" alt="Cancún, Q.R.">
+                    </div>
+
+                    <div class="col-12 col-md-6 pt-3 text-justify">
+                        <h3>Cancún, Quintana Roo, México</h3>
+                        <p>Entre el 25 y el 30 de Noviembre se celebra en Cancún, Quintana Roo, México, el evento más
+                            importante del mundo del ocio interactivo y los videojuegos, el Electronic Entertainment
+                            Expo 2020.</p>
+                        <p>Electronic Entertainment Expo: La feria de videojuegos más importante del mundo.</p>
+                        <br>
+                        <a class="btn btn-success" href="https://www.caribemexicano.travel/cancun/"
+                            target="_blank">Conoce más de este lugar...</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Fin Lugar y Fecha -->
+
+        <!-- SECCIÓN INSCRIBE A TU EQUIPO -->
+        <section id="inscribe" class="pt-5 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col text-center">
+                        <h4 class="display-5 text-uppercase pt-3 pb-3"
+                            style="font-weight: bold; font-family: serif; background-color: white">Inscribe a tu equipo
+                            Gamer <br>Para las mejores competencias internacionales</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-md-8 offset-md-2 pt-4 text-center">
+                        Inscribe a tu equipo para participar en las diferentes competencias internacionales, que pueden
+                        ser individuales o en <abbr title="Máximo 5 participantes">equipos</abbr>.
+                    </div>
+                </div>
+                <div class="row pt-4 pb-4">
+                    <div class="col col-md-8 offset-md-2 pt-2">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12 col-sm-6 pb-1 pt-1">
+                                    <input type="text" class="form-control" placeholder="Nombre del equipo" required>
+                                </div>
+                                <div class="form-group col-12 col-sm-6 pb-1 pt-1">
+                                    <input type="text" class="form-control" placeholder="Nombre del capitán" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12 pb-1 pt-1">
+                                    <input type="text" class="form-control" placeholder="Correo electrónico del capitán"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <textarea name="propuesta" class="form-control"
+                                            placeholder="Describe a tu equipo y en que tipo de videojuegos son competitivos."
+                                            rows="10"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <button type="button" class="btn btn-success btn-block">Enviar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- FIN DE LA SECCIÓN INSCRIBE A TU EQUIPO -->
+
+    </main>
+    <!-- FIN DE LA SECCIÓN PRINCIPAL -->
+
+    <!-- FOOTER -->
+    <footer id="footer" class="pb-4 pt-4">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12 col-md">
+                    <a href="#">Preguntas Frecuentes</a>
+                </div>
+                <div class="col-12 col-md">
+                    <a href="#">Contacto</a>
+                </div>
+                <div class="col-12 col-md">
+                    <a href="#">Prensa</a>
+                </div>
+                <div class="col-12 col-md">
+                    <a href="#">¿Quiénes somos?</a>
+                </div>
+                <div class="col-12 col-md">
+                    <a href="#">Mapa del sitio</a>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col pt-4">
+                    <p>Redes Sociales:</p>
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col pt-1 pb-4">
+                    <a href="https://es-la.facebook.com/tecjerez/">
+                        <i data-toggle="tooltip" data-placement="left" title="Facebook"
+                            class="fab fa-facebook-square fa-2x pr-3 pl-3"></i>
+                    </a>
+                    <a href="http://tecjerez.edu.mx/itsj/">
+                        <i data-toggle="tooltip" data-placement="bottom" title="Sitio Web"
+                            class="fab fa-twitter-square fa-2x pr-3 pl-3"></i>
+                    </a>
+                    <a
+                        href="https://www.instagram.com/explore/locations/268918844/instituto-tecnologico-superior-de-jerez-itsj/?hl=es-la">
+                        <i data-toggle="tooltip" data-placement="bottom" title="Instagram"
+                            class="fab fa-instagram fa-2x pr-3 pl-3"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCrl4vGfrwCcdJ61-fwy7MKw">
+                        <i data-toggle="tooltip" data-placement="right" title="Youtube"
+                            class="fab fa-youtube fa-2x pr-3 pl-3"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row text-center pb-2 pt-4">
+                <div class="col">
+                    <img src="./assets/img/logotec.png" alt="ITSJ" width="80px" height="80px">
+                </div>
+            </div>
+            <div class="row text-center pb-2 pt-4">
+                <div class="col">
+                    <p>&copy; 2020 - Tecnológico Nacional de México, Campus Jerez - Reservados todos los derechos.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Fin Footer -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal_compra" data-backdrop="static" data-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Adquirir Entradas</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Registra los datos del formulario:
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-12 pb-1 pt-1">
+                                <input type="text" class="form-control" placeholder="Nombre(s)" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-12 pb-1 pt-1">
+                                <input type="text" class="form-control" placeholder="Apellidos" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-12 pb-1 pt-1">
+                                <input type="email" class="form-control" placeholder="Correo Electrónico" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-12 pb-1 pt-1">
+                                <label for="select1">
+                                    Número de Entradas:
+                                </label>
+                                <select id="select1" class="form-control">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-12 pb-1 pt-1">
+                                <label for="select2">
+                                    Forma de Pago:
+                                </label>
+                                <select id="select2" class="form-control">
+                                    <option>Tarjeta de Crédito / Debito</option>
+                                    <option>Paypal</option>
+                                    <option>Oxxo</option>
+                                    <option>Depósito Bancario</option>
+                                    <option>Transferencia Electrónica</option>
+                                    <option>Efectivo</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button type="button" class="btn btn-primary">Confirmar compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+
+    </script>
+</body>
+
+</html>
